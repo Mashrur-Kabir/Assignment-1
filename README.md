@@ -30,7 +30,7 @@ const getProductProperty = (obj: Product, key: keyof Product) => {
 const result1 = getProductProperty(product, "price");   // বৈধ
 const result2 = getProductProperty(product, "title");   // বৈধ
 
-getProductProperty(product, "color");  // ভুল
+const result3 = getProductProperty(product, "color");  // ভুল, কারণ ‘color’ নামে কোনো কী নেই
 
 console.log(result1, result2);
 ```
